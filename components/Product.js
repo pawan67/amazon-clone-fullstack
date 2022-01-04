@@ -17,7 +17,7 @@ function Product({ title, id, price, description, category, image }) {
         {Array(rating)
           .fill()
           .map((_, i) => (
-            <AiFillStar className=" text-[#f3a847]" />
+            <AiFillStar key={i} className=" text-[#f3a847]" />
           ))}
       </div>
       <p className=" text-xs my-2 line-clamp-2 ">{description}</p>
