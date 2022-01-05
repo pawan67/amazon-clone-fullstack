@@ -26,7 +26,7 @@ function Header() {
           </div>
         </div>
         {/* right */}
-        <div className=" ml-3 mt-3 sm:mt-0  flex items-center text-sm sm:mx-6 space-x-6  text-white">
+        <div className=" ml-3 mt-3 sm:mt-0 relative  flex items-center text-sm sm:mx-6 space-x-6  text-white">
           <div className=" link">
             <p className=" font-extrabold">Hello Pawan Tamada</p>
             <p>Account & lists</p>
@@ -35,18 +35,21 @@ function Header() {
             <p className=" font-extrabold">Returns</p>
             <p>& Orders</p>
           </div>
-          <div className=" relative flex items-center link">
-            <RiShoppingCart2Line className=" text-4xl"/>
+         
+
+          <div className="  relative flex items-center link">
+            <RiShoppingCart2Line className=" ml-14 sm:ml-0 text-4xl"/>
             <p className="  font-extrabold hidden sm:block mt-2 ">Basket</p>
             <span className=" h-5 w-5 flex justify-center items-center absolute top-0 right-0 sm:right-10  rounded-full text-center font-bold text-black  bg-[#f3a847]">0</span>
           </div>
+         
         </div>
        
       </div>
        {/* bootom nav */}
        <div className=" pl-3  h-10 space-x-3 sm:pl-6 flex items-center text-white text-sm bg-amazon_blue-light">
           <p className=" flex ">
-            <GiHamburgerMenu className=" mr-3 inline-block  text-white text-xl"/>
+            <GiHamburgerMenu className="  mr-3 inline-block  text-white text-xl"/>
              All
           </p>
           <p className=" link"> Prime Video </p>
