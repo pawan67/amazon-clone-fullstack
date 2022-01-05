@@ -5,10 +5,14 @@ import Banner from "../components/Banner";
 import ProductFeed from "../components/ProductFeed";
 import Footer from "../components/Footer";
 
-export default function Home({products}) {
+export default function Home({ products }) {
   return (
-    <div className="bg-gray-100 w-screen">
+    <div className="bg-gray-100 font-nunito w-screen">
       <Head>
+        <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
+        </style>
         <title>
           Online Shopping site in India: Shop Online for Mobiles, Books,
           Watches, Shoes and More - Amazon.in
@@ -20,10 +24,9 @@ export default function Home({products}) {
         {/* Banner */}
         <Banner />
         {/* Product Feed */}
-        <ProductFeed products={products}/>
-       
+        <ProductFeed products={products} />
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

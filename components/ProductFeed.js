@@ -18,7 +18,7 @@ function ProductFeed({ products }) {
         ))}
        
 
-      <img className="relative md:col-span-full " src="images/banner8.jpg" alt="" />
+      <img className="relative  xl:rounded-md md:col-span-full " src="images/banner8.jpg" alt="" />
        
       <div className=" md:col-span-2">
         {products

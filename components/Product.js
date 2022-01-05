@@ -7,7 +7,7 @@ function Product({ title, id, price, description, category, image }) {
   const [rating] = useState(Math.floor(Math.random() * (5 - 1 + 1) + 1));
   const [hasPrime] = useState(Math.random() < 0.5);
   return (
-    <div className=" rounded-sm relative flex flex-col m-5 bg-white z-30 p-10">
+    <div className=" rounded-md relative flex flex-col m-5 bg-white z-30 p-10">
       <p className=" absolute top-2 right-2 text-xs italic text-gray-400">
         {category}
       </p>
