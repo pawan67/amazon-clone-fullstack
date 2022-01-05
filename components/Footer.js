@@ -4,7 +4,7 @@ import { AiFillHeart } from "react-icons/ai";
 function Footer() {
   return (
     <div>
-      <footer className="text-center lg:text-left bg-amazon_blue-light text-gray-100">
+      <footer className="text-center text-sm lg:text-left bg-amazon_blue-light text-gray-100">
         <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-900">
           <div className="mr-12 hidden lg:block">
             <span>Get connected with us on social networks:</span>
