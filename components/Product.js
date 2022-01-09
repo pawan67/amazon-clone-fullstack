@@ -3,9 +3,25 @@ import { useState } from "react";
 import Currency from "react-currency-formatter";
 //AiFillStar
 import { AiFillStar } from "react-icons/ai";
+import { useDispatch } from "react-redux";
+import { addToBasket } from "../slices/basketSlice";
 function Product({ title, id, price, description, category, image }) {
+  const dispatch = useDispatch();
   const [rating] = useState(Math.floor(Math.random() * (5 - 1 + 1) + 1));
   const [hasPrime] = useState(Math.random() < 0.5);
+  const addItemToBasket = () => {
+    const product = {
+      title,
+      id,
+      price,
+      description,
+      category,
+      image,
+      hasPrime,
+      rating
+    };
+    dispatch(addToBasket(product))
+  };
   return (
     <div className=" rounded-md relative  flex flex-col m-5 bg-white z-30 p-10">
       <p className=" absolute top-2 right-2 text-xs italic text-gray-400">
@@ -30,7 +46,9 @@ function Product({ title, id, price, description, category, image }) {
           <p className=" -mt-3 text-xs">Free 1 Day Delivery </p>
         </div>
       )}
-      <button className=" mt-5 button  ">Add to basket</button>
+      <button onClick={addItemToBasket} className=" mt-5 button  ">
+        Add to basket
+      </button>
     </div>
   );
 }

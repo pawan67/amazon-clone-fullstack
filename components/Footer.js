@@ -4,7 +4,7 @@ import { AiFillHeart } from "react-icons/ai";
 function Footer() {
   return (
     <div>
-      <footer className="text-center text-sm lg:text-left bg-amazon_blue-light text-gray-100">
+      <footer className=" md:px-20 text-center text-sm lg:text-left bg-amazon_blue-light text-gray-100">
         <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-900">
           <div className="mr-12 hidden lg:block">
             <span>Get connected with us on social networks:</span>
@@ -261,8 +261,9 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="text-center p-6 bg-amazon_blue">
-          <span className="text-gray-100">© 2022 Copyright</span>
+      </footer>
+        <div className="text-center  p-6 bg-amazon_blue">
+          <span className="text-gray-100">© 2022 Developed By </span>
           <a
             className="text-gray-100  font-semibold"
             href="https://pawan67.vercel.app/"
@@ -270,7 +271,6 @@ function Footer() {
             <p className=" ml-2 underline inline-block">pawan67</p>
           </a>
         </div>
-      </footer>
     </div>
   );
 }
