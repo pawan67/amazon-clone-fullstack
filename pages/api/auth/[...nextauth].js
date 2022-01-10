@@ -9,6 +9,9 @@ export default NextAuth({
     GoogleProvider({
       clientId: process.env.GOOGLE_ID,
       clientSecret: process.env.GOOGLE_SECRET,
+      
     }),
   ],
 });
+//https://amazon-clone-pawan67.vercel.app/api/auth/callback/google
+//https://amazon-clone67.netlify.app/api/auth/callback/google
